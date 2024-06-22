@@ -1,0 +1,246 @@
+html {
+  font-family: Roboto, sans-serif;
+}
+
+/*#h1{
+    text-align: center;
+    font-size: 64px;
+    margin-top: -10px;
+
+}*/
+
+
+.h1_box{
+    text-align: center;
+    margin-top: -5px; 
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+
+    /*width: 100%;*/
+    /*display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;*/
+
+    /*display: grid;*/
+    /*grid-template-rows: 1fr auto;*/
+    /*width: 500px;*/
+  }
+  
+  .box {
+    width: calc(20% - 20px); 
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); 
+    align-items: center;
+    margin-right: 20px;
+    background-color: #4CAF50;
+  }
+
+
+  .box_button {
+    display: none; /*ДЕЛАЕТ КНОПКУ НЕ ВИДИМОЙ*/
+
+  
+    background-color: #4CAF50; 
+    color: white; 
+    cursor: pointer; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px; 
+    text-align: center; 
+    padding: 12px 24px; 
+    border: none; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    width: 100%; 
+    height: 30px;
+    margin-top: -5px;
+    box-sizing: border-box; 
+
+  }
+
+
+  .separator {
+    display: none;   /*ДЕЛАЕТ НЕВИДЕМЫМ ЭТО ДЛЯ КНОПКУ ОТДЕЛЕНИЕ*/
+
+    height: 1px; 
+    background-color: #ccc; 
+    margin: 50% 0;
+    margin-bottom: 5px;
+    position: relative; 
+     
+  } 
+
+  @media (max-width: 1189px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .box {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      margin: 10px;
+      height: auto; 
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; 
+      flex-wrap: wrap;
+      
+    }
+  
+    .box {
+      flex: 5; 
+      margin-bottom: 20px;
+      width: 100%;
+      margin-right: 20px;
+    }
+
+    .box_button {
+      align-self: flex-start; 
+    }
+    .header{
+      width: 100px;
+    }
+
+    .header h1 {
+      text-align: center;
+    }
+
+    .header{
+      width: 414px;
+    }
+  }
+  
+
+.shapca{
+    display: block; 
+    margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  background-color: green;
+  height: 300px; 
+  width: 100%;
+  align-items: center;
+}
+
+.header h1{
+  /*text-align: center;*/
+  margin: auto;
+  font-size: 50px;
+ }
+
+
+
+
+  
+  .box_button:hover {
+    background-color: #45a049; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  }
+  
+  .box_button:active {
+    transform: scale(0.95); 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); 
+  }
+
+.drop-down-element{
+  margin-top: 20px;
+  
+}
+
+/*.drop-down-element{
+  summary {
+    cursor: pointer;
+    border: 1px solid  #ccc; ; 
+    height: 35px;
+    outline: none; 
+  }
+}*/
+/*.drop-down-element summary:hover,*/
+.drop-down-element .content {
+  outline: 2px solid #ccc;
+  background-color: #C0C0C0; 
+  outline-offset: -2px;
+  padding: 10px; 
+} 
+
+
+.drop-down-element{
+  summary {
+    height: 35px;
+    /*margin: -35px 0 0 -100px;*/
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #808080;
+    color: #fff;
+    font-size: 1.5em;
+    outline: none;
+  }
+}
+
+
+
+
+
+.slider-container {
+  display: flex;
+  flex-direction: column; /* Keep vertical direction */
+  align-items: center;
+}
+
+#fontSizeSlider {
+  width: 200px; /* Maintain width */
+  height: 40px; /* Increase height to make it taller */
+  box-sizing: border-box;
+}
+
+#paragraph {
+  font-size: 20px; /* Keep font size */
+}
+
+
+.top_div {
+  margin-top: 20px;
+  background-color:#0f9432; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100px; 
+  text-align: center; 
+}
+
+.top { 
+  margin: 0; 
+}
+
+.top_div_2 {
+  margin-top: 20px;
+  background-color:#1bbf47; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100px; 
+  text-align: center; 
+}
