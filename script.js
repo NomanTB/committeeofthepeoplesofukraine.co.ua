@@ -188,3 +188,21 @@ slider.addEventListener('input', function() {
   const fontSize = slider.value;
   paragraph.style.fontSize = `${fontSize}px`;
 });*/
+
+
+
+
+
+// Автоматическая нумерация записей
+document.addEventListener('DOMContentLoaded', () => {
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach((box, index) => {
+        let numSpan = box.querySelector('.box-num');
+        if (!numSpan) {
+            numSpan = document.createElement('span');
+            numSpan.className = 'box-num';
+            box.prepend(numSpan);
+        }
+        numSpan.textContent = index + 1;
+    });
+});
